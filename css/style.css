@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+h1,h2,h3,h4,h5,h6,a,div,p,li{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --fontfamily: "Poppins",sans-serif;
+    --primarycolor: #fff;
+    --secondarycolor: #282938;
+    --secondarybtncolor: #FCD980;
+}
+/* ===========================================
+                navbar css start here
+=========================================== */
+#navbar_part{
+    background-color: #1C1E53;
+    padding: 32px 0px;
+}
+#navbar_part .custom_navbar a{
+    color: var(--primarycolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 30px;
+}
+#navbar_part .btn{
+    border: none;
+    background-color: transparent;
+    color: var(--primarycolor);
+    border: 1px solid var(--primarycolor);
+    padding: 14px 45px;
+    border-radius: 41px;
+    -webkit-border-radius: 41px;
+    -moz-border-radius: 41px;
+    -ms-border-radius: 41px;
+    -o-border-radius: 41px;
+}
+#navbar_part .banner_left h1{
+    color: var(--primarycolor);
+    font-family: var(--fontfamily);
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 70px;
+}
+#navbar_part .banner_left p{
+    color: var(--primarycolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    opacity: 0.7; 
+}
+#navbar_part .view_btn{
+    padding: 12px 56px;
+    border-radius: 41px;
+    background: var(--secondarybtncolor);
+    color: var(--secondarycolor);
+}
+#navbar_part .view_pricing a{
+    color: var(--primarycolor);
+}
+#navbar_part .custom_margin{
+    margin-top: 190px;
+}
+/* ==========================================
+                navbar css end here
+==============================================*/
