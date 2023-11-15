@@ -1,3 +1,6 @@
+/* =====================================================================================
+                COMMON CSS PART START HERE
+==========================================================================================*/
 *{
     margin: 0;
     padding: 0;
@@ -14,19 +17,33 @@ a{
 img{
     vertical-align: middle;
 }
-h1,h2,h3,h4,h5,h6,a,div,p,li{
+h1,h2,h3,h4,h5,h6,a,div,p,li,img,ul,ol{
     margin: 0;
     padding: 0;
 }
+/* =====================================================================================
+                COMMON CSS PART END HERE
+==========================================================================================*/
+
+/* =====================================================================================
+                VARIABLE CSS PART START HERE
+==========================================================================================*/
 :root{
     --fontfamily: "Poppins",sans-serif;
     --primarycolor: #fff;
     --secondarycolor: #282938;
     --secondarybtncolor: #FCD980;
+    --bgcolor: #1C1E53;
+    --varthirdcolor: #2405F2;
+    --secondarybgcolor: #F4F6FC;
 }
-/* ===========================================
-                navbar css start here
-=========================================== */
+
+/* =====================================================================================
+                VARIABLE CSS PART END HERE
+==========================================================================================*/
+/* =====================================================================================
+                NAVVAR CSS PART START HERE
+==========================================================================================*/
 #navbar_part{
     background-color: #1C1E53;
     padding: 32px 0px;
@@ -77,20 +94,544 @@ h1,h2,h3,h4,h5,h6,a,div,p,li{
 #navbar_part .custom_margin{
     margin-top: 190px;
 }
-/* ==========================================
-                navbar css end here
-==============================================*/
+/* =====================================================================================
+                NAVBAR CSS PART END HERE
+==========================================================================================*/
 
-/* ============================================
-         finsweet work part css start here
-===============================================*/
-#work_part{
-    background-color: #F4F6FC;
-    padding: 129px 0px;
+
+/* =====================================================================================
+                BANNER CSS PART START HERE
+==========================================================================================*/
+#banner_part{
+    background-color: var(--bgcolor);
+}
+#banner_part .banner_left_side h2{
+    color: var(--primarycolor);
+    font-family: var(--fontfamily);
+    font-size: 54px;
+    font-weight: 600;
+    
+}
+#banner_part .banner_left_side p{
+    color: var(--primarycolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+#banner_part .banner_left_part a{
+    padding: 8px 45px;
+    color: #1B1C2B;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 600;
+    font-weight: 600;
+    background-color: var(--secondarybtncolor);
+    transition: all ease-in-out 2s;
+    -webkit-transition: all ease-in-out 1s;
+    -moz-transition: all ease-in-out 1s;
+    -ms-transition: all ease-in-out 1s;
+    -o-transition: all ease-in-out 1s;
 }
 
+#banner_part .banner_left_part:hover a{
+    color: var(--primarycolor);
+    background-color: #caa649;
+}
+#banner_part .pricing_part a{
+    color: var(--primarycolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* =====================================================================================
+                BANNER  CSS PART END HERE
+==========================================================================================*/
+#item_part{
+    padding: 0 130px;
+    background-color: var(--secondarybgcolor);
+}
+#item_part .left_part_text h2{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 48px;
+    font-weight: 600;
+}
+#item_part .left_part_text p{
+    padding-right: 50px;
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+#item_part .left_part_text a{
+    color: var(--varthirdcolor);
+    font-family: var(--fontfamily);
+    font-size: 18px;
+    font-weight: 500;
+}
+#item_part .item_rigth_part .item1 h2{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 32px;
+    font-weight: 500;
+}
+#item_part .item_rigth_part .item1 p{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 400;
+}
+/* =====================================================================================
+                LIST ITEM  CSS PART END HERE
+==========================================================================================*/
 
 
-/* ============================================
-        finsweet work part css end here
-===============================================*/
+
+/* =====================================================================================
+                LIST ITEM  CSS PART END HERE
+==========================================================================================*/
+
+/* =====================================================================================
+                PROJECT  CSS PART END HERE
+==========================================================================================*/
+#project_part .project_lefttext h2{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 48px;
+    font-weight: 600;
+
+}
+#project_part .project_righttext a{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 18px;
+    font-weight: 600;
+
+}
+#project_part .left_side_part .overlay{
+    width: 50%;
+    height: 100%;
+    margin-left: -50%;
+    visibility: hidden;
+    cursor: pointer;
+    background: var(--bgcolor);
+    opacity: 0.7;
+    transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    -ms-transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+}
+#project_part .left_side_part:hover .overlay{
+    visibility: visible;
+    margin-left: 0%;
+}
+#project_part .left_side_part .overlay .leftside_text{
+    margin-top: 220px;
+    margin-left: 48px;
+}
+#project_part .left_side_part .overlay .leftside_text h2{
+    color: var(--primarycolor);
+    font-family: var(--fontfamily);
+    font-size: 24px;
+    font-weight: 600;
+
+}
+#project_part .left_side_part .overlay .leftside_text p{
+    width: 290px;
+    color: var(--primarycolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+#project_part .left_side_part .overlay .leftside_text a{
+    color: var(--secondarybtncolor);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+}
+#project_part .right_part1 .overlay_small{
+   width: 0%;
+   height: 100%;
+   cursor: pointer;
+   background: var(--bgcolor);
+   opacity: 0.7;
+   transition: width ease-in 0.5s;
+   -webkit-transition: width ease-in .5s;
+   -moz-transition: width ease-in 0.5s;
+   -ms-transition: width ease-in 0.5s;
+   -o-transition: width ease-in 0.5s;
+}
+#project_part .right_part1:hover .overlay_small{
+    display: block;
+    width: 100%;
+}
+#project_part .right_part1 .overlay_small:hover .overlay_smalltext{
+    display: block;
+}
+#project_part .right_part1 .overlay_smalltext{
+    display: none;
+    margin-top: 120px;
+    margin-left: 40px;
+    padding-right: 36px;
+}
+#project_part .right_part1 .overlay_small .overlay_smalltext h2{
+    color: var(--primarycolor);
+    font-family: var(--fontfamily);
+    font-size: 24px;
+    font-weight: 600;
+}
+#project_part .right_part1 .overlay_small .overlay_smalltext a{
+    color: var(--secondarybtncolor);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+}
+/* =====================================================================================
+                PROJECT  CSS PART END HERE
+==========================================================================================*/
+
+/* =====================================================================================
+             FEATURE  CSS PART START HERE
+==========================================================================================*/
+#feature_part{
+    background-color: var(--secondarybgcolor);
+}
+#feature_part .feature_part_text p{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#feature_part .feature_part_text h2{
+    color: var(--secondarycolor);
+    text-align: center;
+    font-family: var(--fontfamily);
+    font-size: 48px;
+    font-weight: 600;
+}
+/* =====================================================================================
+             FEATURE  CSS PART END HERE
+==========================================================================================*/
+
+/* =====================================================================================
+             FEATURE ICON CSS PART START HERE
+==========================================================================================*/
+#feature_part_icon{
+    background-color: var(--secondarybgcolor);
+}
+#feature_part_icon .feature_icon{
+    width: 400px;
+    height: 310px;
+    background-color: var(--primarycolor);
+}
+#feature_part_icon .feature_icon h2{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 24px;
+    font-weight: 500;
+}
+#feature_part_icon .feature_icon p{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7; 
+}
+/* =====================================================================================
+             FEATURE ICON CSS PART END HERE
+==========================================================================================*/
+
+/* =====================================================================================
+             CLIENT SECTION CSS PART START HERE
+==========================================================================================*/
+#client_part{
+    background-color: var(--secondarybgcolor);
+}
+#client_part .client_left_part h2{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 38px;
+    font-weight: 600;
+    padding-right: 150px;
+}
+#client_part .client_left_part p{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 120px;
+    opacity: 0.7;
+}
+#client_part .client_right_part h2{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 30px;
+    font-weight: 500;
+}
+#client_part .client_right_part .client_text h4{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 18px;
+    font-weight: 500;
+}
+#client_part .client_right_part .client_text p{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 12px;
+    font-weight: 500;
+}
+/* =====================================================================================
+             CLIENT SECTION CSS PART END HERE
+==========================================================================================*/
+
+/* =====================================================================================
+             QUESTION PART CSS PART END HERE
+==========================================================================================*/
+#question_part{
+    background-color: var(--primarycolor);
+}
+#question_part .question_left_part h2{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 38px;
+    font-weight: 600;
+}
+#question_part .question_left_part p{
+    color: var(--varthirdcolor);
+    font-family: var(--fontfamily);
+    font-size: 18px;
+    font-weight: 500
+}
+#question_part .question_rigth_part span{
+    margin-right: 45px;
+    color: var(--varthirdcolor);
+    font-family: var(--fontfamily);
+    font-size: 24px;
+    font-weight: 500;
+}
+#question_part .question_rigth_part p{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 70px;
+    opacity: 0.87;
+}
+#question_part .question_rigth_part h5{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 24px;
+    font-weight: 500;
+}
+/* =====================================================================================
+             QUESTION PART CSS PART END HERE
+==========================================================================================*/
+
+/* =====================================================================================
+                INQUIRY PART CSS PART END HERE
+==========================================================================================*/
+#inquiry_part{
+    background-color: var(--primarycolor);
+}
+#inquiry_part .inquiry_left_part .img_overlay{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgcolor);
+    opacity: 0.7;
+}
+#inquiry_part .inquiry_left_part .img_overlay .img_overlay_text h2{
+    color: var(--primarycolor);
+    font-family: var(--fontfamily);
+    font-size: 54px;
+    font-weight: 600;
+    opacity: 100%;
+}
+#inquiry_part .inquiry_left_part .img_overlay .img_overlay_text p{
+    color: var(--primarycolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 100%;
+}
+#inquiry_part .inquiry_right_part{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgcolor);
+}
+#inquiry_part .inquiry_right_part .inquiry_right_text{
+   padding: 65px 95px 48px 95px;
+   color: var(--primarycolor);
+}
+#inquiry_part .inquiry_right_part .inquiry_right_text h2{
+    color: var(--primarycolor);
+    font-family: var(--fontfamily);
+    font-size: 32px;
+    font-weight: 500;
+}
+#inquiry_part .inquiry_right_part .inquiry_right_text p{
+    color: gray;
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 500; 
+}
+#inquiry_part .inquiry_right_part .inquiry_right_text button{
+    color: #1B1C2B;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--secondarybtncolor);
+    transition:  all ease-in-out 1s;
+    -webkit-transition:  all ease-in-out 1s;
+    -moz-transition:  all ease-in-out 1s;
+    -ms-transition:  all ease-in-out 1s;
+    -o-transition:  all ease-in-out 1s;
+}
+#inquiry_part .inquiry_right_part .inquiry_right_text:hover button{
+    background-color: #caa649;
+    color: red;
+}
+#inquiry_part .inquiry_right_part .inquiry_right_text a{
+    color: var(--primarycolor);
+    font-family: var(--fontfamily);
+    font-size: 18px;
+    font-weight: 500;
+}
+#inquiry_part .inquiry_right_part .inquiry_right_text label{
+    opacity: 0.5;
+}
+/* =====================================================================================
+                INQUIRY PART CSS PART END HERE
+==========================================================================================*/
+
+/* =====================================================================================
+                BLOG PART CSS PART END HERE
+==========================================================================================*/
+#blog_part .blog_text h2{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 48px;
+    font-weight: 600;  
+}
+#blog_part .card_part h5{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 500; 
+}
+#blog_part .card_part h3{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 28px;
+    font-weight: 500;
+}
+#blog_part .card_part p{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+#blog_part .card_part a{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 500;
+}
+/* =====================================================================================
+                BLOG PART CSS PART END HERE
+==========================================================================================*/
+
+/* =====================================================================================
+                FOOTER PART CSS PART END HERE
+==========================================================================================*/
+#footer_part{
+    padding-top: 100px;
+    background-color: var(--bgcolor);
+}
+#footer_part .footer_left_part img{
+    width: 156px;
+    height: 38px;
+}
+#footer_part .footer_left_part p{
+    color: var(--primarycolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+#footer_part .footer_contact_part .left_text h3{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 18px;
+    font-weight: 500;
+}
+#footer_part .footer_contact_part .left_text p{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 400;
+}
+#footer_part .footer_contact_part .rigth_text h3{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 18px;
+    font-weight: 500;
+}
+#footer_part .footer_contact_part .rigth_text p{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 400;
+}
+#footer_part .footer_right_part h2{
+    color: var(--primarycolor);
+    font-family: var(--fontfamily);
+    font-size: 48px;
+    font-weight: 600;
+}
+#footer_part .footer_right_part p{
+    color: var(--secondarybgcolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+#footer_part .footer_right_part .icon i{
+    margin-right: 20px;
+    color: var(--primarycolor);
+}
+#footer_part .footer_contact_part{
+    width: 515px;
+    height: 95px;
+    margin-top: 90px;
+    background-color: var(--secondarybtncolor);
+}
+/* =====================================================================================
+                FOOTER PART CSS PART END HERE
+==========================================================================================*/
+
+/* =====================================================================================
+                EXTRA FOOTER PART CSS PART START HERE
+==========================================================================================*/
+#extra_footer_part .copy_part P{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 16px;
+    font-weight: 500;
+}
+#extra_footer_part .footer_home ul li a {
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    margin-right: 30px;
+    font-size: 16px;
+    font-weight: 500; 
+}
+/* =====================================================================================
+                EXTRA FOOTER PART CSS PART END HERE
+==========================================================================================*/
