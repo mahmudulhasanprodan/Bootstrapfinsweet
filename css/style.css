@@ -49,17 +49,20 @@ h1,h2,h3,h4,h5,h6,a,div,p,li,img,ul,ol{
     padding: 32px 0px;
 }
 #navbar_part .custom_navbar a{
-    color: var(--primarycolor);
+    color: #BBBBCB;
     font-family: var(--fontfamily);
     font-size: 16px;
     font-weight: 500;
     margin-right: 30px;
 }
+#navbar_part .custom_navbar a:hover{
+    color: var(--primarycolor);
+}
 #navbar_part .btn{
     border: none;
     background-color: transparent;
     color: var(--primarycolor);
-    border: 1px solid var(--primarycolor);
+    border: 2px solid #f4f6fc33;
     padding: 14px 45px;
     border-radius: 41px;
     -webkit-border-radius: 41px;
@@ -67,6 +70,7 @@ h1,h2,h3,h4,h5,h6,a,div,p,li,img,ul,ol{
     -ms-border-radius: 41px;
     -o-border-radius: 41px;
 }
+
 #navbar_part .banner_left h1{
     color: var(--primarycolor);
     font-family: var(--fontfamily);
@@ -97,455 +101,127 @@ h1,h2,h3,h4,h5,h6,a,div,p,li,img,ul,ol{
 /* =====================================================================================
                 NAVBAR CSS PART END HERE
 ==========================================================================================*/
-
-
 /* =====================================================================================
                 BANNER CSS PART START HERE
 ==========================================================================================*/
-#banner_part{
-    background-color: var(--bgcolor);
+#banner_part .left_side_text{
+    margin-top: 150px;
+    margin-bottom: 100px;
 }
-#banner_part .banner_left_side h2{
-    color: var(--primarycolor);
+#banner_part .left_side_text h6{
+    color: var(--secondarycolor);
+    font-family: var(--fontfamily);
+    font-size: 18px;
+    font-weight: 500;
+}
+#banner_part .left_side_text h2{
+    color: var(--secondarycolor);
     font-family: var(--fontfamily);
     font-size: 54px;
     font-weight: 600;
-    
 }
-#banner_part .banner_left_side p{
-    color: var(--primarycolor);
+#banner_part .right_side_img{
+    margin-top: 125px;
+}
+#banner_part .right_side_img img{
+    border: 5px solid #f4f6fc33;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+}
+#banner_part .left_side_text p{
+    color: var(--secondarycolor);
     font-family: var(--fontfamily);
+    text-align: justify;
+    padding-right: 50px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     opacity: 0.7;
-}
-#banner_part .banner_left_part a{
-    padding: 8px 45px;
-    color: #1B1C2B;
-    font-family: Manrope;
-    font-size: 18px;
-    font-weight: 600;
-    font-weight: 600;
-    background-color: var(--secondarybtncolor);
-    transition: all ease-in-out 2s;
-    -webkit-transition: all ease-in-out 1s;
-    -moz-transition: all ease-in-out 1s;
-    -ms-transition: all ease-in-out 1s;
-    -o-transition: all ease-in-out 1s;
-}
 
-#banner_part .banner_left_part:hover a{
-    color: var(--primarycolor);
-    background-color: #caa649;
 }
-#banner_part .pricing_part a{
-    color: var(--primarycolor);
-    font-family: var(--fontfamily);
-    font-size: 16px;
-    font-weight: 500;
-}
-
 /* =====================================================================================
                 BANNER  CSS PART END HERE
 ==========================================================================================*/
-#item_part{
-    padding: 0 130px;
+
+
+/* =====================================================================================
+              GOAL PARTCSS PART START HERE
+==========================================================================================*/
+#goal_part .goal_up{
     background-color: var(--secondarybgcolor);
 }
-#item_part .left_part_text h2{
-    color: var(--secondarycolor);
-    font-family: var(--fontfamily);
-    font-size: 48px;
-    font-weight: 600;
-}
-#item_part .left_part_text p{
-    padding-right: 50px;
-    color: var(--secondarycolor);
-    font-family: var(--fontfamily);
-    font-size: 16px;
-    font-weight: 400;
-    opacity: 0.7;
-}
-#item_part .left_part_text a{
-    color: var(--varthirdcolor);
-    font-family: var(--fontfamily);
-    font-size: 18px;
-    font-weight: 500;
-}
-#item_part .item_rigth_part .item1 h2{
-    color: var(--secondarycolor);
-    font-family: var(--fontfamily);
-    font-size: 32px;
-    font-weight: 500;
-}
-#item_part .item_rigth_part .item1 p{
-    color: var(--secondarycolor);
-    font-family: var(--fontfamily);
-    font-size: 16px;
-    font-weight: 400;
-}
-/* =====================================================================================
-                LIST ITEM  CSS PART END HERE
-==========================================================================================*/
-
-
-
-/* =====================================================================================
-                LIST ITEM  CSS PART END HERE
-==========================================================================================*/
-
-/* =====================================================================================
-                PROJECT  CSS PART END HERE
-==========================================================================================*/
-#project_part .project_lefttext h2{
-    color: var(--secondarycolor);
-    font-family: var(--fontfamily);
-    font-size: 48px;
-    font-weight: 600;
-
-}
-#project_part .project_righttext a{
-    color: var(--secondarycolor);
-    font-family: var(--fontfamily);
-    font-size: 18px;
-    font-weight: 600;
-
-}
-#project_part .left_side_part .overlay{
-    width: 50%;
-    height: 100%;
-    margin-left: -50%;
-    visibility: hidden;
-    cursor: pointer;
-    background: var(--bgcolor);
-    opacity: 0.7;
-    transition: all ease-in-out 0.5s;
-    -webkit-transition: all ease-in-out 0.5s;
-    -moz-transition: all ease-in-out 0.5s;
-    -ms-transition: all ease-in-out 0.5s;
-    -o-transition: all ease-in-out 0.5s;
-}
-#project_part .left_side_part:hover .overlay{
-    visibility: visible;
-    margin-left: 0%;
-}
-#project_part .left_side_part .overlay .leftside_text{
-    margin-top: 220px;
-    margin-left: 48px;
-}
-#project_part .left_side_part .overlay .leftside_text h2{
-    color: var(--primarycolor);
-    font-family: var(--fontfamily);
-    font-size: 24px;
-    font-weight: 600;
-
-}
-#project_part .left_side_part .overlay .leftside_text p{
-    width: 290px;
-    color: var(--primarycolor);
-    font-family: var(--fontfamily);
-    font-size: 16px;
-    font-weight: 500;
-    opacity: 0.8;
-}
-#project_part .left_side_part .overlay .leftside_text a{
-    color: var(--secondarybtncolor);
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 500;
-}
-#project_part .right_part1 .overlay_small{
-   width: 0%;
-   height: 100%;
-   cursor: pointer;
-   background: var(--bgcolor);
-   opacity: 0.7;
-   transition: width ease-in 0.5s;
-   -webkit-transition: width ease-in .5s;
-   -moz-transition: width ease-in 0.5s;
-   -ms-transition: width ease-in 0.5s;
-   -o-transition: width ease-in 0.5s;
-}
-#project_part .right_part1:hover .overlay_small{
-    display: block;
-    width: 100%;
-}
-#project_part .right_part1 .overlay_small:hover .overlay_smalltext{
-    display: block;
-}
-#project_part .right_part1 .overlay_smalltext{
-    display: none;
-    margin-top: 120px;
+#goal_part .goal_up .goal_left_text{
     margin-left: 40px;
-    padding-right: 36px;
+    margin-top: 40px;
 }
-#project_part .right_part1 .overlay_small .overlay_smalltext h2{
-    color: var(--primarycolor);
-    font-family: var(--fontfamily);
-    font-size: 24px;
-    font-weight: 600;
-}
-#project_part .right_part1 .overlay_small .overlay_smalltext a{
-    color: var(--secondarybtncolor);
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 500;
-}
-/* =====================================================================================
-                PROJECT  CSS PART END HERE
-==========================================================================================*/
-
-/* =====================================================================================
-             FEATURE  CSS PART START HERE
-==========================================================================================*/
-#feature_part{
-    background-color: var(--secondarybgcolor);
-}
-#feature_part .feature_part_text p{
+#goal_part .goal_up .goal_left_text h6{
     color: var(--secondarycolor);
     font-family: var(--fontfamily);
     font-size: 16px;
     font-weight: 500;
 }
-
-#feature_part .feature_part_text h2{
-    color: var(--secondarycolor);
-    text-align: center;
-    font-family: var(--fontfamily);
-    font-size: 48px;
-    font-weight: 600;
-}
-/* =====================================================================================
-             FEATURE  CSS PART END HERE
-==========================================================================================*/
-
-/* =====================================================================================
-             FEATURE ICON CSS PART START HERE
-==========================================================================================*/
-#feature_part_icon{
-    background-color: var(--secondarybgcolor);
-}
-#feature_part_icon .feature_icon{
-    width: 400px;
-    height: 310px;
-    background-color: var(--primarycolor);
-}
-#feature_part_icon .feature_icon h2{
-    color: var(--secondarycolor);
-    font-family: var(--fontfamily);
-    font-size: 24px;
-    font-weight: 500;
-}
-#feature_part_icon .feature_icon p{
-    color: var(--secondarycolor);
-    font-family: var(--fontfamily);
-    font-size: 16px;
-    font-weight: 400;
-    opacity: 0.7; 
-}
-/* =====================================================================================
-             FEATURE ICON CSS PART END HERE
-==========================================================================================*/
-
-/* =====================================================================================
-             CLIENT SECTION CSS PART START HERE
-==========================================================================================*/
-#client_part{
-    background-color: var(--secondarybgcolor);
-}
-#client_part .client_left_part h2{
+#goal_part .goal_up .goal_left_text h2{
     color: var(--secondarycolor);
     font-family: var(--fontfamily);
     font-size: 38px;
     font-weight: 600;
-    padding-right: 150px;
 }
-#client_part .client_left_part p{
+#goal_part .goal_up .goal_left_text p{
     color: var(--secondarycolor);
     font-family: var(--fontfamily);
+    text-align: justify;
+    padding-right: 50px;
     font-size: 16px;
     font-weight: 400;
-    padding-right: 120px;
     opacity: 0.7;
 }
-#client_part .client_right_part h2{
-    color: var(--secondarycolor);
-    font-family: var(--fontfamily);
-    font-size: 30px;
-    font-weight: 500;
-}
-#client_part .client_right_part .client_text h4{
-    color: var(--secondarycolor);
-    font-family: var(--fontfamily);
-    font-size: 18px;
-    font-weight: 500;
-}
-#client_part .client_right_part .client_text p{
-    color: var(--secondarycolor);
-    font-family: var(--fontfamily);
-    font-size: 12px;
-    font-weight: 500;
-}
 /* =====================================================================================
-             CLIENT SECTION CSS PART END HERE
+             GOAL PART CSS PART END HERE
 ==========================================================================================*/
 
+
 /* =====================================================================================
-             QUESTION PART CSS PART END HERE
+             INOVATE PART CSS PART START HERE
 ==========================================================================================*/
-#question_part{
-    background-color: var(--primarycolor);
+#inovate_part{
+    background-color: #EEF4FA;
+}   
+#inovate_part .left_side_text{
+    padding-top: 180px;
 }
-#question_part .question_left_part h2{
+#inovate_part .left_side_text h6{
     color: var(--secondarycolor);
     font-family: var(--fontfamily);
-    font-size: 38px;
-    font-weight: 600;
-}
-#question_part .question_left_part p{
-    color: var(--varthirdcolor);
-    font-family: var(--fontfamily);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500
 }
-#question_part .question_rigth_part span{
-    margin-right: 45px;
-    color: var(--varthirdcolor);
-    font-family: var(--fontfamily);
-    font-size: 24px;
-    font-weight: 500;
-}
-#question_part .question_rigth_part p{
+#inovate_part .left_side_text h2{
     color: var(--secondarycolor);
     font-family: var(--fontfamily);
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 70px;
-    opacity: 0.87;
-}
-#question_part .question_rigth_part h5{
-    color: var(--secondarycolor);
-    font-family: var(--fontfamily);
-    font-size: 24px;
-    font-weight: 500;
-}
-/* =====================================================================================
-             QUESTION PART CSS PART END HERE
-==========================================================================================*/
-
-/* =====================================================================================
-                INQUIRY PART CSS PART END HERE
-==========================================================================================*/
-#inquiry_part{
-    background-color: var(--primarycolor);
-}
-#inquiry_part .inquiry_left_part .img_overlay{
-    width: 100%;
-    height: 100%;
-    background-color: var(--bgcolor);
-    opacity: 0.7;
-}
-#inquiry_part .inquiry_left_part .img_overlay .img_overlay_text h2{
-    color: var(--primarycolor);
-    font-family: var(--fontfamily);
-    font-size: 54px;
+    font-size: 38px;
     font-weight: 600;
-    opacity: 100%;
 }
-#inquiry_part .inquiry_left_part .img_overlay .img_overlay_text p{
-    color: var(--primarycolor);
-    font-family: var(--fontfamily);
-    font-size: 16px;
-    font-weight: 500;
-    opacity: 100%;
-}
-#inquiry_part .inquiry_right_part{
-    width: 100%;
-    height: 100%;
-    background-color: var(--bgcolor);
-}
-#inquiry_part .inquiry_right_part .inquiry_right_text{
-   padding: 65px 95px 48px 95px;
-   color: var(--primarycolor);
-}
-#inquiry_part .inquiry_right_part .inquiry_right_text h2{
-    color: var(--primarycolor);
-    font-family: var(--fontfamily);
-    font-size: 32px;
-    font-weight: 500;
-}
-#inquiry_part .inquiry_right_part .inquiry_right_text p{
-    color: gray;
-    font-family: var(--fontfamily);
-    font-size: 16px;
-    font-weight: 500; 
-}
-#inquiry_part .inquiry_right_part .inquiry_right_text button{
-    color: #1B1C2B;
-    font-family: Manrope;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: var(--secondarybtncolor);
-    transition:  all ease-in-out 1s;
-    -webkit-transition:  all ease-in-out 1s;
-    -moz-transition:  all ease-in-out 1s;
-    -ms-transition:  all ease-in-out 1s;
-    -o-transition:  all ease-in-out 1s;
-}
-#inquiry_part .inquiry_right_part .inquiry_right_text:hover button{
-    background-color: #caa649;
-    color: red;
-}
-#inquiry_part .inquiry_right_part .inquiry_right_text a{
-    color: var(--primarycolor);
-    font-family: var(--fontfamily);
-    font-size: 18px;
-    font-weight: 500;
-}
-#inquiry_part .inquiry_right_part .inquiry_right_text label{
-    opacity: 0.5;
-}
-/* =====================================================================================
-                INQUIRY PART CSS PART END HERE
-==========================================================================================*/
-
-/* =====================================================================================
-                BLOG PART CSS PART END HERE
-==========================================================================================*/
-#blog_part .blog_text h2{
+#inovate_part .left_side_text p{
     color: var(--secondarycolor);
     font-family: var(--fontfamily);
-    font-size: 48px;
-    font-weight: 600;  
-}
-#blog_part .card_part h5{
-    color: var(--secondarycolor);
-    font-family: var(--fontfamily);
-    font-size: 16px;
-    font-weight: 500; 
-}
-#blog_part .card_part h3{
-    color: var(--secondarycolor);
-    font-family: var(--fontfamily);
-    font-size: 28px;
-    font-weight: 500;
-}
-#blog_part .card_part p{
-    color: var(--secondarycolor);
-    font-family: var(--fontfamily);
+    text-align: justify;
+    padding-right: 50px;
     font-size: 16px;
     font-weight: 400;
-    opacity: 0.7;
+    opacity: 0.7
 }
-#blog_part .card_part a{
-    color: var(--secondarycolor);
-    font-family: var(--fontfamily);
-    font-size: 16px;
-    font-weight: 500;
-}
+#inovate_part .right_side_text img{
+        margin-top: 125px;
+        border: 5px solid var(--primarycolor);
+        -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+        box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+        
+ }
 /* =====================================================================================
-                BLOG PART CSS PART END HERE
+             INOVATE PART CSS PART END HERE
 ==========================================================================================*/
+
 
 /* =====================================================================================
                 FOOTER PART CSS PART END HERE
